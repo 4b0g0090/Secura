@@ -1,0 +1,116 @@
+body{
+    width: 95%;
+    color: aliceblue;
+}
+
+.username{
+    color: aliceblue;
+}
+
+.Title {
+    justify-content: space-between;
+display: flex;}
+
+.currenttime{
+    color: aliceblue;
+    transform: translateY(30%);
+    font-weight: 1000;
+}
+
+.realtime{
+    text-align: center;
+    color: aliceblue;
+    font-size: 160%;
+    font-weight: 1000;
+}
+
+
+.area_img{
+    margin: 10px;
+    border-radius: 12px;
+    width: 250px;
+    height: 250px;
+}
+
+
+.realtime_area_container{
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    display: flex;
+    overflow-y: auto;
+}
+
+.midline01{
+
+    border-radius: 6px;
+    height: 0.6%;
+    position: absolute; /* 絕對定位線條 */
+  top: 25%; /* 垂直居中 */
+  left: 50%; /* 水平居中 */
+  transform: translate(-50%, -50%); /* 調整位置到正中心 */
+  width: 90%; /* 線條寬度，設為 100% 以覆蓋整個容器 */
+  background-color: gray; /* 線條顏色 */
+}
+
+.area_container{
+    /* 重要的版面配置 */
+    display: flex; /* 使樓層內的區域圖片水平排列 */
+    flex-wrap: nowrap; /* 禁止換行 */
+    overflow-x: auto; /* 當圖片超出容器寬度時，顯示水平滾動條 */
+    align-items: center; /* 垂直居中對齊 */
+    gap: 20px; /* 區域圖片之間的間距 */
+}
+
+.area{
+    position: relative;
+    display: inline-block;
+    
+  margin-right: 10px; /* 每個項目之間的間距 */
+  text-align: center; /* 文字居中 */
+  position: relative;
+  margin: 0 10px; /* 每個區域項目之間的水平間距 */
+}
+
+.Floor_title{
+    font-size: 250%;
+    color: aliceblue;
+    font-weight: 1000;
+    
+}
+.area_name{
+    z-index: 5;
+    position: absolute; 
+    color: aliceblue;
+    font-weight: 1000;
+    font-size: 25px;
+    z-index: 1;
+    pointer-events: none; /* 禁止事件穿透，避免影響圖片點擊 */
+    top: 50%; /* 垂直居中 */
+    left: 50%; /* 水平居中 */
+    transform: translate(-50%, -50%); /* 將文字的中心對齊容器的中心 */
+    white-space: nowrap;
+}
+
+.statelight{
+    border: 2px solid gray; /* 添加一個白色邊框，使燈泡更清晰 */
+
+    top: 10%; /* 距離圖片頂部 5 像素 */
+  left: 10%; /* 距離圖片右側 5 像素 */
+  border-radius: 50%;
+    position: absolute;
+    z-index: 2;
+    width: 20px;
+    height: 20px;
+}
+
+
+.realtime{
+    width: 300;
+    height: 300;
+    border-radius: 20px;
+}
+
+.detection_time{
+    color: aliceblue;
+}

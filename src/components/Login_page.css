@@ -1,0 +1,103 @@
+.title_name
+{
+    color: aliceblue;
+    font-size: 250%;
+    text-align: center;
+    margin-right: 1%;
+}
+
+.login_text{
+    font-weight: 1000;
+    font-size: 100%;
+    display: inline-block;
+    color: black;
+    border: solid 1px ;
+    border-color: aliceblue;
+    background-color: aliceblue;
+    padding: 3px;
+    border-radius: 6px;
+    transform: translateY(35%);
+}
+.Title{
+    display: flex; /* 使用 Flexbox 佈局 */
+    justify-content: center; /* 水平居中對齊 */
+    align-items: center; /* 垂直居中對齊 */
+
+}
+.login_input{
+    margin-top: 10%;
+    display: flex; /* 使用 Flexbox 佈局 */
+    flex-direction: column; /* 設置為縱向排列 */
+    gap: 25px; /* 可選：設置元素之間的間距 */
+    align-items: center; /* 可選：左對齊 */
+}
+.input_username{
+    border-radius: 20px;
+    width: 200px;
+    height: 20px;
+}
+.input_password{
+    border-radius: 20px;
+    width: 200px;
+    height: 20px;
+
+
+}
+.btn_login{
+    align-items: center;
+    color: aliceblue;
+    border-radius: 20px;
+}
+
+.login_icon {
+    width: 20px;
+    height: 20px;
+    align-items: center;
+}
+.camera{
+    width: 30px;
+    height: 30px;
+}
+.loadanimation_container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    overflow: hidden;
+    transition: opacity 1s ease-in-out;
+  }
+  .loadanimation_container.loaded {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .camera_icon {
+    
+    animation: 
+    rotate 1s linear forwards,
+    expand 2.5s ease-out 1s forwards;;
+   
+  }
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes expand {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(100);
+      opacity: 0;
+    }
+  }
